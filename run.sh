@@ -1,0 +1,1 @@
+cd ~/duinocoin-checker/ && /usr/bin/node ~/duinocoin-checker/build/src/index.js

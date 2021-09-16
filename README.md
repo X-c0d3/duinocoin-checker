@@ -1,6 +1,6 @@
 ### Duino coin Checker
 
-![Hpool Checker](https://raw.githubusercontent.com/X-c0d3/duinocoin-checker/main/Screenshot/ScreenShot1.png)
+![Duino coin Checker](https://raw.githubusercontent.com/X-c0d3/duinocoin-checker/main/Screenshot/ScreenShot1.png)
 
 ```
 need to install nodejs
@@ -28,6 +28,12 @@ LINE_TOKEN = <YOUR LINE TOKEN>
 USERNAME= <YOUR USERNAME>
 CURRENCY = THB
 EXCHANGE_RATE_USD = 31.5
+```
+
+วิธีติดตั้งผ่าน cron job (Linux Only)
+
+```ruby
+0 0 * * * /<username>/duinocoin-checker/run.sh
 ```
 
 <br />
