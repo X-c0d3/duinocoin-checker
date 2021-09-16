@@ -48,6 +48,8 @@ chmod +x run.sh
 ถ้าอยากให้ script มัน ส่ง Notify ไปตามช่วงเวลาที่เราต้องการได้ สามารถเพิ่มเข้าไปใน cron job ได้เลย
 (หลักการตั้งค่า เหมือน Cron Job บน Linux) ศึกษาเพิ่มเติมที่ https://crontab.guru/
 
+หรือถ้าใช้ windows ก็สามารถเพิ่มเข้าไปใน Windows Task Scheduler (อาจจะต้องรันผ่าน NodeJS CLI)
+
 crontab -e
 เพิ่มเข้าไปใน crontab
 
