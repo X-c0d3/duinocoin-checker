@@ -31,10 +31,25 @@ EXCHANGE_RATE_USD = 31.5
 ```
 
 วิธีติดตั้งผ่าน cron job (Linux Only)
+ssh root@192.168.1.XX (เครืองที่รันจะต้องติดตั้ง nodejs git)
+git clone https://github.com/X-c0d3/duinocoin-checker.git
+cd duinocoin-checker
+yarn install
+yarn build
+chmod +x run.sh
+ทดสอบ
+,/run.sh
+
+![Duino coin Checker](https://raw.githubusercontent.com/X-c0d3/duinocoin-checker/main/Screenshot/ScreenShot2.png)
+
+crontab -e
+เพิ่มเข้าไปใน crontab
 
 ```ruby
 0 0 * * * /<username>/duinocoin-checker/run.sh
 ```
+
+![Duino coin Checker](https://raw.githubusercontent.com/X-c0d3/duinocoin-checker/main/Screenshot/ScreenShot3.png)
 
 <br />
 ขอให้สนุกกับการขุดครับ :)
