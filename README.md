@@ -45,6 +45,9 @@ chmod +x run.sh
 
 ![Duino coin Checker](https://raw.githubusercontent.com/X-c0d3/duinocoin-checker/main/Screenshot/ScreenShot2.png)
 
+ถ้าอยากให้ script มัน ส่ง Notify ไปตามช่วงเวลาที่เราต้องการได้ สามารถเพิ่มเข้าไปใน cron job ได้เลย
+(หลักการตั้งค่า เหมือน Cron Job บน Linux) ศึกษาเพิ่มเติมที่ https://crontab.guru/
+
 crontab -e
 เพิ่มเข้าไปใน crontab
 
