@@ -18,7 +18,7 @@ const convert2THB = (price: any, marketPrice: number) => {
 const convertHashSize = (bytes: number, preFix: string = 'H/s')  => {
   var sizes = ['', 'K', 'M', 'G', 'T'];
   if (bytes == 0) return '0 H';
-  var i =  Math.floor(Math.log(bytes) / Math.log(1024));
+  let i =  Math.floor(Math.log(bytes) / Math.log(1024));
   return (bytes / Math.pow(1024, i)).toFixed(2) + ' ' + sizes[i] + preFix;
 }
 
@@ -28,8 +28,8 @@ const getMinerInfo = async () => {
     .get<Duinocoin>(`${AppConfig.API_URL}/users/${AppConfig.USERNAME}`)
     .then(async (response)  => {
       if (response.data.success) {
-        var { balance, username  } = response.data.result.balance;
-        var miners = response.data.result.miners.filter(f => f.rejected === 0);
+        let { balance, username  } = response.data.result.balance;
+        let miners = response.data.result.miners.filter(f => f.rejected === 0);
         let sumHashRate = convertHashSize(_.sumBy(miners, 'hashrate'));
         let minersSorted = _.sortBy( miners, 'identifier' );
 

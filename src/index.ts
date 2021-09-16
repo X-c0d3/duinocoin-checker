@@ -17,8 +17,8 @@ import { getPriceMarketCap } from './util/MarketCap';
 // Market price from https://coinmarketcap.com/currencies/chia-network/
 const runTask = async () => {
   try {
-    var pricevalue = await getPriceMarketCap('chia-network');
-    let marketPrice = parseFloat(pricevalue.replace(/[฿]/g, m => '').replace(/[$]/g, m => '').replace(/[,]/g, m => ''));
+    // var pricevalue = await getPriceMarketCap('chia-network');
+    // let marketPrice = parseFloat(pricevalue.replace(/[฿]/g, m => '').replace(/[$]/g, m => '').replace(/[,]/g, m => ''));
   
     var msg = await getMinerInfo();
     if (AppConfig.ENABLE_LINE_NOTIFY === 'true')
