@@ -20,7 +20,7 @@ const runTask = async () => {
     // let marketPrice = parseFloat(pricevalue.replace(/[฿]/g, m => '').replace(/[$]/g, m => '').replace(/[,]/g, m => ''));
   
     var msg = await getMinerInfo();
-    if (Boolean(AppConfig.ENABLE_LINE_NOTIFY))
+    if (JSON.parse(AppConfig.ENABLE_LINE_NOTIFY as string))
       sendLineNotify(`${msg}`);
   } catch (error: any) {
     console.log('Error:' + error.message)
